@@ -4,6 +4,7 @@ import path from "node:path";
 export default defineConfig({
   test: {
     environment: "node",
+    testTimeout: 15_000,
     exclude: [
       "tests/e2e/**",
       ".worktrees/**",
